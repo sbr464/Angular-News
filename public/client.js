@@ -24,3 +24,12 @@ newsApp.controller('newItemController', function($scope, News){
     newItem.$save();
   }
 });
+
+//news item directive
+
+newsApp.directive('newsitem', function(){
+  return {
+    restrict: 'E',
+    templateUrl: '/templates/newsitem'
+  }
+});

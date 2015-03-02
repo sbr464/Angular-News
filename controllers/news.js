@@ -9,10 +9,14 @@ var newsController = {
     });
   },
 
-  newItem: function(req, res) {
-    
+  createNew: function(req, res) {
+
+    console.log(req.body)
+    var newNews = new News(req.body)
+    newNews.save(function(err, result){
+      res.send(result);
+    })
   }
-  
 };
 
 module.exports = newsController;

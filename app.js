@@ -23,6 +23,9 @@ app.get('/api/news', newsController.getAll);
 
 app.post('/api/news', newsController.createNew);
 
+//template routes
+app.get('/templates/:templatesid', indexController.getTemplate);
+
 
 var server = app.listen(7449, function() {
 	console.log('Express server listening on port ' + server.address().port);

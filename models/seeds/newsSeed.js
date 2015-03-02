@@ -11,6 +11,7 @@ News.find({}, function(err, results){
       content: 'This cat is funny!',
       imageUrl: 'http://2.bp.blogspot.com/-MrdX0JhwM9U/T65PZsmNS7I/AAAAAAAAAKM/SkTZHvBUMq8/s1600/1336023490071.png'
     });
+    
     item1.save();
 
     var item2 = new News({
@@ -21,8 +22,9 @@ News.find({}, function(err, results){
       tags: ['dingo', 'funny'],
       content: 'This dingo is dumb!',
       imageUrl: 'http://upload.wikimedia.org/wikipedia/commons/b/ba/Canis_lupus_dingo_2.jpg'
-});
-      item2.save();
+    });
+      
+    item2.save();
 
       var item3 = new News({
         title: 'baby crazy',
@@ -32,8 +34,9 @@ News.find({}, function(err, results){
         tags: ['baby', 'funny'],
         content: 'this baby crazy!',
         imageUrl: 'http://www.9freepictures.com/d/file/babies/201001/baby-black-and-white-photography-140-2.jpg'
-});
-        item3.save();
-
+      });
+        
+      item3.save();
+      
   }
 });
